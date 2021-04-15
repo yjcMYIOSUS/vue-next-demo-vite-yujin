@@ -1,0 +1,68 @@
+@import "./public.scss";
+/** 重置浏览器默认标签样式 */
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.xttblog {
+    width: 1300px;
+    height: 100%;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 280px;
+}
+@media (max-width: 1920px) {
+    .xttblog {
+        width: 1300px;
+    }
+}
+@media (max-width: 1366px) {
+    .xttblog {
+        width: 1000px;
+    }
+}
+@media (max-width: 1024px) {
+    .xttblog {
+        width: 768px;
+    }
+}
+@media (max-width: 768px) {
+    .xttblog {
+        width: 500px;
+    }
+}
+.box {
+    margin-left: 5px;
+    margin-top: 5px;
+    list-style-type: none;
+}
+.box:after {
+    content: ".";
+    display: block;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+.box li {
+    float: left;
+    line-height: 230px;
+}
+.box li a,
+.box li a:visited {
+    display: block;
+    border: 1px solid #ccc;
+    width: 240px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.box li a:hover {
+    border-color: #f00;
+    z-index: 2;
+}

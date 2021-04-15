@@ -1,0 +1,81 @@
+.footer-main{
+  background-color: #333333;
+  width: 100%;
+  height: 230px;
+  color: #CCCCCC;
+  padding-top: 25px;
+  display:flex;
+  flex-direction: row;
+  // position: fixed;
+  // top: 0px;
+  /* padding-left:200px; */
+}
+.footer-main a{
+  text-decoration:none;
+}
+.footer-main p{
+  margin-bottom:0rem;
+}
+.footer-moudle{
+  margin: auto;width: 1300px;
+}
+.blog-info{
+  padding-left: 4%;
+}
+.footer-main .footer-div{
+  width: 22%;
+  height: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 22px;
+  /* margin-left:100px; */
+}
+.footer-main .mycol-3{
+  width:16.6%;
+}
+.footer-main .mycol-4{
+  width:18%;
+}
+.footer-main .title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer-main .qcwechat{
+  height: 135px;
+  padding-top:10px;
+  opacity: 0.6;
+}
+// 左漂移
+.footer-main .left{
+  float:left;
+}
+// 右漂移
+.footer-main .right{
+  float:right;
+}
+.footer-main .cursor{
+  cursor: pointer;
+}
+.menu-copyright {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+@media (max-width: 992px) {
+  .menu-copyright {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .footer-main{
+    display: none;
+  }
+}
+.cursor{
+  cursor: pointer;
+}

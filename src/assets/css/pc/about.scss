@@ -1,0 +1,138 @@
+.mar-bottom{
+  margin-bottom:50px;
+}
+.comments .vcount {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.25em;
+    display: block;
+}
+.comments .vcards .vcard .vquote {
+    padding-left: 1em;
+    border-left: 1px dashed hsla(0,0%,93%,.5);
+}
+.comments .vcards .vcard .vcontent {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: .875em;
+    line-height: 2;
+    position: relative;
+    margin-bottom: .75em;
+    padding-top: .625em;
+}
+.comments .vcards .vcard .vh .vmeta {
+    line-height: 1;
+    position: relative;
+}
+.comments .vcards .vcard .vhead {
+    line-height: 1.5;
+    margin-top: 0;
+}
+.comments .vcards .vcard .vh {
+    overflow: hidden;
+    padding-bottom: .5em;
+    border-bottom: 1px dashed #f5f5f5;
+}
+.comments .vcards .vcard:last-child .vh {
+    border-bottom: none;
+}
+.comments img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.comments * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.75;
+}
+.comments .vcards .vcard {
+    padding-top: 1.25em;
+    position: relative;
+    display: block;
+}
+.comments .vcards .vcard .vimg {
+    width: 3.125em;
+    height: 3.125em;
+    float: left;
+    border-radius: 50%;
+    margin-right: .7525em;
+    border: 1px solid #f5f5f5;
+    padding: .125em;
+}
+.comments img {
+    max-width: 100%;
+    border: none;
+}
+.comments .vcards .vcard .vh .vtime {
+    font-size: .75em;
+    margin-right: .875em;
+}
+.comments .vtime {
+    color: #b3b3b3;
+}
+.comments .vcards .vcard .vh .vmeta .vat {
+    font-size: .8125em;
+    color: #ef2f11;
+    cursor: pointer;
+    float: right;
+}
+.comments .vcards .vcard .vhead .vnick {
+    position: relative;
+    font-size: .875em;
+    font-weight: 500;
+    margin-right: .875em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.comments .vsys {
+    display: inline-block;
+    padding: .2em .5em;
+    font-size: .75em;
+    border-radius: .2em;
+    margin-right: .3em;
+}
+.right{
+  float: right;
+}
+.input-button{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 40px;
+}
+input{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    padding: 13px 14px;
+    width: 84%;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+    height: 40px; /* 高度 */
+}
+
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.login-button { /* 按钮美化 */
+  margin-left: 1%;
+	width: 130%; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background:rgb(49, 134, 155); /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+.login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background:rgb(49, 134, 155);
+}

@@ -1,0 +1,22 @@
+.view{
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.div {
+  width: 35px;
+  height: 35px;
+  background: #252736 !important;
+  border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.image{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}

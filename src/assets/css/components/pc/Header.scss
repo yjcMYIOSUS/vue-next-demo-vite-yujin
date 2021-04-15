@@ -1,0 +1,190 @@
+:root {
+  --color-background: #ffffff;
+  --color-background-secondary: #f6f8fa;
+  --color-background-rgb: 255, 255, 255;
+  --color-text: #33333D;
+  --color-text-secondary: #4e4e4e;
+  --color-text-third: #999999;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-mode]) {
+    --color-background: #1e2128;
+    --color-background-secondary: #1a1d22;
+    --color-background-rgb: 30, 33, 40;
+    --color-text: #dddddd;
+    --color-text-secondary: #9899ab;
+    --color-text-third: #7d8594;
+  }
+}
+[color-mode='dark'] {
+  --color-background: #1e2128;
+  --color-background-secondary: #1a1d22;
+  --color-background-rgb: 30, 33, 40;
+  --color-text: #dddddd;
+  --color-text-secondary: #9899ab;
+  --color-text-third: #7d8594;
+}
+.menu {
+  background-color: rgba(var(--color-background-rgb), 0.7) !important;
+}
+.menu {
+  position: fixed;
+  // display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(255,255,255,0.7);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  z-index: 1001;
+}
+.menu .menu-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu-wrap .menu-content {
+  padding: 0;
+  display: flex;
+}
+@media (min-width: 576px) {
+  .menu .menu-wrap .menu-content {
+    position: absolute;
+    top: 30%;
+  }
+}
+@media (max-width: 576px) {
+  .menu .menu-wrap .menu-content {
+    flex-direction: column;
+  }
+}
+.menu .menu-wrap .menu-content .menu-item {
+  font-size: 2em;
+  list-style: none;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.menu .menu-wrap .menu-close i {
+  color: var(--color-text);
+  font-size: 24px;
+}
+.menu .menu-wrap .menu-copyright {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+@media (max-width: 576px) {
+  .menu .menu-wrap .menu-copyright {
+    font-size: 0.75em;
+  }
+}
+.menu .menu-wrap .menu-close {
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  cursor: pointer;
+}
+.menu .menu-wrap .menu-close i {
+  color: var(--color-text);
+  font-size: 24px;
+}
+.menu .menu-wrap .menu-content {
+  padding: 0;
+  display: flex;
+}
+@media (min-width: 576px) {
+  .menu .menu-wrap .menu-content {
+    position: absolute;
+    top: 30%;
+  }
+}
+@media (max-width: 576px) {
+  .menu .menu-wrap .menu-content {
+    flex-direction: column;
+  }
+}
+.menu .menu-wrap .menu-content .menu-item {
+  font-size: 2em;
+  list-style: none;
+  margin: 5px 10px;
+}
+.menu .underline {
+  position: relative;
+  color: var(--color-text) !important;
+}
+.menu .underline:before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  background: var(--color-text);
+  height: 2px;
+  transition: transform 0.2s;
+  transform: scaleX(0);
+}
+.menu .underline:hover:before {
+  transform: scaleX(1);
+}
+
+.menu .span{
+  position: absolute;
+  top: 25%;
+}
+.menu input{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    padding: 13px 14px;
+    width: 620px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+    height: 25px; /* 高度 */
+}
+
+.menu input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.menu .login-button { /* 按钮美化 */
+	width: 150px; /* 宽度 */
+	height: 50px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background:rgb(49, 134, 155); /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+.menu .login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background:rgb(49, 134, 155);
+}
+
+.menu .login-div .sendcode{
+  width: 150px;margin-left: 18px;    
+} 
+.menu .login-div .nosendcode{
+  width: 150px;margin-left: 18px;    background: rgb(92 172 191);
+}
+
+.menu .login-div .tip-text{
+  text-align:center;cursor:pointer;color:#007ACC
+} 
+
+.menu .login-div .code-input{
+  width:450px;
+}
+.menu .login-div .back-button{
+  background-color: rgb(255, 255, 255);border: 1px solid #CCC;color: black; margin-left:100px;
+}

@@ -1,0 +1,44 @@
+  .top{
+    height:100vh;
+  }
+  .goindex{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nopage{
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .main404{
+    // height: 61vh;
+    // padding-top: 100px;
+    width: 100%;
+  }
+  .content404{
+    margin: auto;
+    width: 800px;
+    height: 463px;
+    padding-top: 8%;
+  }
+  .imgdiv{
+    width:50%;float:left;
+  }
+  .worddiv{
+    width:50%;
+    float:left;
+    padding-top:160px;
+  }
+  .menu-copyright {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display:block;
+  }
+  @media (max-width: 576px) {
+    .menu-copyright {
+      font-size: 0.75em;
+    }
+  }

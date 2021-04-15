@@ -1,0 +1,233 @@
+/*
+ * Theme of Crisp Minimal Resume
+ * Copyright (c) David Zhang, 2019
+ */
+html {
+  width: 100%;
+  font-size: 14px; }
+
+body {
+  text-align: center;
+  width: 100%;
+  font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  margin: 0;
+  color: #495057;
+  background-color: #fff; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  max-width: 75rem;
+  text-align: left; }
+
+@media screen and (max-width: 48rem) {
+  html {
+    font-size: 12px; }
+
+  .container {
+    padding-left: .4rem;
+    padding-right: .4rem; } }
+@media print {
+  html {
+    font-size: 12px; }
+
+  .print {
+    display: none; } }
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #adb5bd;
+  padding-top: 3.2rem;
+  padding-bottom: 2.2rem; }
+
+.name-wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.title {
+  font-size: 2.2rem; }
+
+.sub-title {
+  font-size: 1.2rem;
+  margin-top: .8rem; }
+
+.contact {
+  font-size: 1rem;
+  padding-top: 1rem; }
+
+.contact-item {
+  margin-top: .4rem; }
+  .contact-item:nth-child(1) {
+    margin-top: 0; }
+  .contact-item:a {
+    color: inherit;
+    text-decoration: none; }
+
+@media screen and (max-width: 48rem) {
+  header {
+    display: block;
+    padding-bottom: 1rem; }
+
+  .name-wrapper {
+    text-align: center;
+    padding-bottom: 2rem; }
+
+  .contact {
+    padding-top: 1rem;
+    border-top: 0.1rem solid #adb5bd; }
+
+  .contact-item {
+    padding-top: .2rem;
+    padding-left: .4rem; } }
+section {
+  display: flex;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: .2rem;
+  border-bottom: 0.1rem solid #adb5bd;
+  hyphens: auto; }
+
+.section-title {
+  font-size: 1.6rem;
+  text-align: left;
+  min-width: 10rem; }
+
+.section-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.block {
+  margin-bottom: 2rem; }
+  .block:last-child {
+    margin-bottom: 0; }
+
+.block-square {
+  width: 18rem; }
+  .block-square:nth-last-child(2) {
+    margin-bottom: 0; }
+
+.block-title {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+  font-weight: bold; }
+
+.block-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #adb5bd; }
+
+.block-content {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+@media screen and (max-width: 48rem) {
+  section {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem; }
+
+  .section-flex {
+    display: block; }
+
+  .block-square:nth-last-child(2) {
+    margin-bottom: 2rem; 
+	} 
+}
+footer {
+  color: #adb5bd;
+  font-size: 1rem;
+  min-height: 3rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  /* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr6draw_0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr4traw_0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr5draw_0.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr6traw_0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr5jraw_0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr6jraw_0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr6zraw_0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/o-0iipqlx3qulc5a4pnr5tra.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+ .menu-copyright {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  display:block;
+}
+@media (max-width: 576px) {
+  .menu-copyright {
+    font-size: 0.75em;
+  }
+}
+

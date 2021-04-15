@@ -1,0 +1,108 @@
+ .page-bar {
+   text-align: center;
+   width: 100%;
+   height: 36px;
+   margin: 0 auto;
+   position: relative;
+ }
+
+ .page-bar ul {
+   min-width: 800px;
+   display: block;
+   overflow: hidden;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   }
+
+.page-bar li {
+   display: block;
+    border: 1px solid #ddd;
+   width: 36px;
+   height: 36px;
+   border-radius: 4px;
+   list-style: none;
+   overflow: hidden;
+   position: relative;
+   float: left;
+   margin-left: 8px;
+}
+.page-bar .first{
+   display: block;
+  //  width: 170px;
+   width: 100px;
+   height: 36px;
+   font-size: 14px;
+   line-height: 36px;
+   text-align: center;
+}
+.page-bar .last_li{
+   width: 100px;
+   height: 36px;
+   border: 1px solid #ddd;
+   line-height: 34px;
+}
+.page-bar .last_li span{
+    width: 100%;
+   height: 100%;
+   line-height: 36px;
+   text-align: center;
+   float: left;
+}
+.page-bar li:first-child {
+   margin-left: 0px
+}
+
+.page-bar a {
+   width: 34px;
+   height: 34px;
+   text-decoration: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   /*margin-left: -1px;*/
+   line-height:  34px;
+   color: #333;
+   cursor: pointer
+}
+
+.page-bar .li_a a:hover {
+   background-color: #eee;
+   border: 1px solid #40A9FF;
+   color: #40A9FF;
+}
+
+.page-bar a.banclick {
+   cursor: not-allowed;
+}
+
+.page-bar .active a {
+   color: #fff;
+   cursor: default;
+   background-color: #1890FF;
+   border-color: #1890FF;
+}
+
+.page-bar i {
+   font-style: normal;
+   color: #d44950;
+   margin: 0px 4px;
+   font-size: 14px;
+}
+.page-bar .prev-next{
+  width:50px;
+}
+
+.page-bar input{  
+	background:none;  
+	outline:none;  
+  border:1px solid #ccc;
+  
+}
+.page-bar .page-input{
+  width: 30px;
+  height: 25px;
+  padding-left: 6px;
+}

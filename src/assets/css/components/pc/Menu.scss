@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255,255,255,0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+  transition: transform 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.navbar.hide {
+  transform: translateY(-55px);
+}
+.navbar > div {
+  flex: 1;
+  display: inline-flex;
+  text-align: center;
+}
+.navbar .left {
+  justify-content: flex-start;
+  padding-left: 15px;
+}
+.navbar .left .iconfont:not(:first-child) {
+  margin-left: 10px;
+}
+.navbar .center {
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.navbar .center.hide {
+  opacity: 1;
+}
+.navbar .right {
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.navbar .right .iconfont:not(:last-child) {
+  margin-right: 10px;
+}
+.navbar .iconfont {
+  font-size: 22px;
+  color: var(--color-text);
+}
+.navbar .iconfont:hover {
+  cursor: pointer;
+}
+.navbar .qrcode {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 70px;
+  left: 15px;
+  padding: 15px;
+  border: 1px solid #eee;
+  background-color: var(--color-background);
+}
+.navbar .qrcode img {
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 768px) {
+  .navbar .center {
+    display: none;
+  }
+}
+.preview_self{
+  height: 60px;
+  width: 100%;
+  // background-color: #FFFFFF;
+  position: fixed;
+  z-index: 50;
+  // opacity: 0.5;
+}
+.preview_self .navbar {
+  position: fixed;
+  display: block;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  // background-color: #69696A !important;
+  background-color: #252736 !important;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.preview_self .navbar-menu{
+  right: 15px;
+}
+.preview_self .navbar-hei{
+  right: 65px;
+}
+.preview_self .img_more{
+  width:60%;
+  margin-top: 8px;
+}
+
+.preview_self .navbar .iconfont {
+  font-size: 18px;
+  color: #fff;
+}
+
+.preview_self .user_logo{
+    opacity: 1;
+    left:15px;
+    background: url('http://thirdqq.qlogo.cn/g?b=oidb&k=chKV5fa4V6wqcOuTiatmibHQ&s=100&t=1555469889'); 
+    background-size: 100% 100%; 
+    background-position: center center; 
+    overflow: auto;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+    transition: .4s all ease-in-out;
+}
+/*用户头像360度旋转 css */
+.user_logo:hover {
+    transform:rotate(360deg)
+}

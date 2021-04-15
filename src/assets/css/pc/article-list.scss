@@ -1,0 +1,16 @@
+@import "./public.scss";
+.label-button{
+  border-radius: 12px;
+  width: 120px;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  background: #31869B;
+  color: #FFFFFF;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.article-mode{
+  padding-top: 10px;
+}
